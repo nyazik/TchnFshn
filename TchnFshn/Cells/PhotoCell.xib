@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="gTV-IL-0wX" customClass="PhotoCell" customModule="TchnFshn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="188"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="188"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ika-tz-1Ag">
+                        <rect key="frame" x="1" y="1" width="156" height="89"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="EXM-LD-f77">
+                        <rect key="frame" x="11" y="91" width="136" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="dX3-zu-VhG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO6-Sl-pkE">
+                        <rect key="frame" x="13" y="147" width="91" height="23"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                        <color key="textColor" name="AccentColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="EXM-LD-f77" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="91" id="5Bp-UI-UvD"/>
+                <constraint firstItem="ika-tz-1Ag" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="7bQ-e4-648"/>
+                <constraint firstAttribute="trailing" secondItem="ika-tz-1Ag" secondAttribute="trailing" constant="1" id="DWU-gG-tIm"/>
+                <constraint firstItem="EXM-LD-f77" firstAttribute="top" secondItem="ika-tz-1Ag" secondAttribute="bottom" constant="1" id="JJU-I5-OBC"/>
+                <constraint firstItem="EXM-LD-f77" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="11" id="ZQb-Qx-8sv"/>
+                <constraint firstItem="tO6-Sl-pkE" firstAttribute="top" secondItem="EXM-LD-f77" secondAttribute="bottom" constant="14" id="Zx3-JC-ldJ"/>
+                <constraint firstItem="tO6-Sl-pkE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="i4Y-W2-BhO"/>
+                <constraint firstAttribute="trailing" secondItem="tO6-Sl-pkE" secondAttribute="trailing" constant="54" id="sJW-7B-Phw"/>
+                <constraint firstItem="ika-tz-1Ag" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="yDI-PT-rvR"/>
+                <constraint firstItem="EXM-LD-f77" firstAttribute="centerX" secondItem="ika-tz-1Ag" secondAttribute="centerX" id="yuz-5G-YB1"/>
+            </constraints>
+            <size key="customSize" width="158" height="188"/>
+            <connections>
+                <outlet property="procustPrice" destination="tO6-Sl-pkE" id="GwJ-Xa-HUR"/>
+                <outlet property="productDescription" destination="EXM-LD-f77" id="8Fc-96-9eu"/>
+                <outlet property="productImageView" destination="ika-tz-1Ag" id="RgX-XA-wUQ"/>
+            </connections>
+            <point key="canvasLocation" x="97.101449275362327" y="117.1875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
