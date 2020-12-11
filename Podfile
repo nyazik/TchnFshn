@@ -8,5 +8,7 @@ target 'TchnFshn' do
   # Pods for TchnFshn
 
 pod 'Alamofire', '~> 5.2'
-  pod 'Kingfisher'
+pod 'Kingfisher'
+pod 'Firebase/Auth'
+
 end

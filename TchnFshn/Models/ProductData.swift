@@ -7,21 +7,11 @@
 
 import Foundation
 
-struct ProductData : Codable {
-//    var data: [Data]
+struct ProductData : Codable, Equatable {
     let id: Int?
-    let title: String
+    var title: String
     let price: Double
     let description: String
     let category: String
     let image: String?
 }
-
-//struct Data :Codable {
-//    let id: Int
-//    let title: String
-//    let price: Double
-//    let description: String
-//    let category: String
-//    let image: String
-//}

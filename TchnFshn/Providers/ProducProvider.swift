@@ -14,12 +14,12 @@ struct ProductProvider {
     let vehicleURL = "https://fakestoreapi.com/products"
 
 
-    func fetch(category: String,
+    func fetch(category: String, sirala :String,
                completion: @escaping ([ProductData]) -> Void) {
-        var url = "https://fakestoreapi.com/products/"
+        var url = "https://fakestoreapi.com/products"
         
-        if category != "" { url += "category/\(category)" }
-        
+        if category != "" { url += "/category/\(category)" }
+        if sirala != "" { url += "?sort=\(sirala)" }
         AF.request(url).responseString { response in
             debugPrint(response.data as? Any)
             print(response.data)
@@ -27,7 +27,7 @@ struct ProductProvider {
                 print("error, unable to fetch data from URL:\(url)")
                 return
             }
-            print(data)
+            print(url)
             guard let decodedData = try? JSONDecoder().decode([ProductData].self, from: data) else {
                 print("sorry, unable to decode json data")
                 

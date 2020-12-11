@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BE7C9A99243D811F067292FC /* Pods_TchnFshn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EDCC73DB858D703F3626BA /* Pods_TchnFshn.framework */; };
+		CD4593A92583860F004AE458 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4593A82583860F004AE458 /* RegisterViewController.swift */; };
+		CD4593AC258389FB004AE458 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4593AB258389FB004AE458 /* LogInViewController.swift */; };
 		CD5516FB2582A7710034B534 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5516FA2582A7710034B534 /* TabbarViewController.swift */; };
 		CD5516FE2582B3D00034B534 /* FiltremeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5516FD2582B3D00034B534 /* FiltremeTableViewController.swift */; };
 		CD62EB0E2581C83E0065B9CD /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD62EB0C2581C83E0065B9CD /* PhotoCell.xib */; };
@@ -20,12 +22,16 @@
 		CD7022802581A94800C6956D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD70227E2581A94800C6956D /* Main.storyboard */; };
 		CD7022822581A94B00C6956D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7022812581A94B00C6956D /* Assets.xcassets */; };
 		CD7022852581A94B00C6956D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7022832581A94B00C6956D /* LaunchScreen.storyboard */; };
+		CDBD28F725837450004F1063 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD28F625837450004F1063 /* ProductDetailViewController.swift */; };
+		CDCE0FA225838022000353E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDCE0FA125838022000353E3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09953F6E1D945DFB138DE0BC /* Pods-TchnFshn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TchnFshn.debug.xcconfig"; path = "Target Support Files/Pods-TchnFshn/Pods-TchnFshn.debug.xcconfig"; sourceTree = "<group>"; };
 		24EDCC73DB858D703F3626BA /* Pods_TchnFshn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TchnFshn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E797260F9974C94DED087D /* Pods-TchnFshn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TchnFshn.release.xcconfig"; path = "Target Support Files/Pods-TchnFshn/Pods-TchnFshn.release.xcconfig"; sourceTree = "<group>"; };
+		CD4593A82583860F004AE458 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CD4593AB258389FB004AE458 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CD5516FA2582A7710034B534 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		CD5516FD2582B3D00034B534 /* FiltremeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltremeTableViewController.swift; sourceTree = "<group>"; };
 		CD62EB0C2581C83E0065B9CD /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		CD7022812581A94B00C6956D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD7022842581A94B00C6956D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD7022862581A94B00C6956D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBD28F625837450004F1063 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		CDCE0FA125838022000353E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,9 @@
 				CD70227C2581A94800C6956D /* ViewController.swift */,
 				CD5516FA2582A7710034B534 /* TabbarViewController.swift */,
 				CD5516FD2582B3D00034B534 /* FiltremeTableViewController.swift */,
+				CDBD28F625837450004F1063 /* ProductDetailViewController.swift */,
+				CD4593A82583860F004AE458 /* RegisterViewController.swift */,
+				CD4593AB258389FB004AE458 /* LogInViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -137,6 +148,7 @@
 			children = (
 				CD7022782581A94800C6956D /* AppDelegate.swift */,
 				CD70227A2581A94800C6956D /* SceneDelegate.swift */,
+				CDCE0FA125838022000353E3 /* GoogleService-Info.plist */,
 				CD5516F82582A7120034B534 /* Controllers */,
 				CD62EB232582420B0065B9CD /* Cells */,
 				CD62EB21258241FF0065B9CD /* Providers */,
@@ -210,6 +222,7 @@
 			files = (
 				CD62EB0E2581C83E0065B9CD /* PhotoCell.xib in Resources */,
 				CD7022852581A94B00C6956D /* LaunchScreen.storyboard in Resources */,
+				CDCE0FA225838022000353E3 /* GoogleService-Info.plist in Resources */,
 				CD7022822581A94B00C6956D /* Assets.xcassets in Resources */,
 				CD7022802581A94800C6956D /* Main.storyboard in Resources */,
 			);
@@ -265,7 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD62EB0F2581C83E0065B9CD /* PhotoCell.swift in Sources */,
+				CD4593A92583860F004AE458 /* RegisterViewController.swift in Sources */,
+				CD4593AC258389FB004AE458 /* LogInViewController.swift in Sources */,
 				CD5516FE2582B3D00034B534 /* FiltremeTableViewController.swift in Sources */,
+				CDBD28F725837450004F1063 /* ProductDetailViewController.swift in Sources */,
 				CD62EB1A258224F00065B9CD /* ProducProvider.swift in Sources */,
 				CD5516FB2582A7710034B534 /* TabbarViewController.swift in Sources */,
 				CD70227D2581A94800C6956D /* ViewController.swift in Sources */,
