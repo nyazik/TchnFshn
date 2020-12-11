@@ -18,8 +18,14 @@ struct ProductProvider {
                completion: @escaping ([ProductData]) -> Void) {
         var url = "https://fakestoreapi.com/products"
         
+        
         if category != "" { url += "/category/\(category)" }
+        if category == "men clothing" { url  =  "https://fakestoreapi.com/products/category/men%20clothing" }
+        if category == "women clothing" { url = "https://fakestoreapi.com/products/category/women%20clothing" }
+        
+        
         if sirala != "" { url += "?sort=\(sirala)" }
+        
         AF.request(url).responseString { response in
             debugPrint(response.data as? Any)
             print(response.data)
@@ -40,16 +46,6 @@ struct ProductProvider {
 
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     

@@ -15,13 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var siralaButton: UIButton!
-    
     fileprivate let cellIdentifier = "PhotoCell"
     private var product: [ProductData] = []
     private var searchProduct : [ProductData] = []
-    
     var searching = false
-        
     var categoryName = ""
     var siralaName = ""
     var productProvider = ProductProvider()
@@ -34,7 +31,6 @@ class ViewController: UIViewController {
         containerView.backgroundColor = UIColor.white
         setupCollectionView()
         fetchPhotos()
-
     }
     
     
@@ -46,7 +42,6 @@ class ViewController: UIViewController {
             }
         }
       
-    
     
     
     func updatePhotosAfterFetching(_ photos: [ProductData]) {
@@ -98,18 +93,12 @@ extension ViewController : UICollectionViewDataSource{
         productDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: productDetailStoryboardID) as? ProductDetailViewController
         productDetailViewController!.modalPresentationStyle = .popover
         let popover = self.productDetailViewController!.popoverPresentationController
-        
         let cell = self.collectionView.cellForItem(at: indexPath) as! PhotoCell
         let _ = productDetailViewController?.view
-        
         productDetailViewController?.productImage.image = cell.productImageView.image
-        
         let data = self.product[indexPath.item]
-        
         productDetailViewController?.populate(with: data)
-
         popover!.sourceView = self.view
-        
         present(self.productDetailViewController!, animated: true, completion: nil)
     }
     
@@ -134,14 +123,6 @@ extension ViewController : UICollectionViewDataSource{
                 cell.productDescription.text =   String(product[indexPath.item].title)
             }
         }
-        
-//        if let imageUrl = product[indexPath.item].image {
-//            let url = URL(string: imageUrl)
-//            cell.productImageView.kf.setImage(with: url)
-//            let cena = product[indexPath.item].price
-//            cell.procustPrice.text = String("\(cena) TL")
-//            cell.productDescription.text =   String(product[indexPath.item].title)
-        
         return cell
     }
     
@@ -176,14 +157,14 @@ extension ViewController : FiltremeTableViewControllerProtocol{
         self.categoryName = categoryName
         fetchPhotos()
     }
-    
-    
 }
 
 
 extension ViewController : UISearchBarDelegate{
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = ""
+        searching = false
+        collectionView.reloadData()
     }
     
   
@@ -195,6 +176,7 @@ extension ViewController : UISearchBarDelegate{
         searching = true
         fetchPhotos()
         collectionView.reloadData()
+        
     }
 }
 

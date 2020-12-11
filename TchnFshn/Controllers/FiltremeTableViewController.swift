@@ -16,7 +16,7 @@ class FiltremeTableViewController: UITableViewController {
     
     var delegate : FiltremeTableViewControllerProtocol?
     let cameraCellId = "cameraCellId"
-    var categories: [String] = ["men%20clothing","jewelery","electronics", "women%20clothing"]
+    var categories: [String] = ["men clothing","jewelery","electronics", "women clothing"]
     
     
     override func viewDidLoad() {
