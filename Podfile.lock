@@ -45,12 +45,16 @@ PODS:
     - nanopb/encode (= 2.30906.0)
   - nanopb/decode (2.30906.0)
   - nanopb/encode (2.30906.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
   - PromisesObjC (1.2.11)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Firebase/Auth
   - Kingfisher
+  - NVActivityIndicatorView
 
 SPEC REPOS:
   trunk:
@@ -64,6 +68,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - Kingfisher
     - nanopb
+    - NVActivityIndicatorView
     - PromisesObjC
 
 SPEC CHECKSUMS:
@@ -77,8 +82,9 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
 
-PODFILE CHECKSUM: a44c7cbf1623169ff308577ea410b7849293079a
+PODFILE CHECKSUM: c47c6533ad7ec2651a95fd835b953f65731e0ae4
 
 COCOAPODS: 1.10.0

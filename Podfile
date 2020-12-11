@@ -10,5 +10,6 @@ target 'TchnFshn' do
 pod 'Alamofire', '~> 5.2'
 pod 'Kingfisher'
 pod 'Firebase/Auth'
+pod 'NVActivityIndicatorView'
 
 end

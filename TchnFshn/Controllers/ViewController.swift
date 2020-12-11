@@ -8,6 +8,8 @@
 import UIKit
 import Alamofire
 import Kingfisher
+import NVActivityIndicatorView
+
 
 class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
@@ -25,8 +27,14 @@ class ViewController: UIViewController {
     var productDetailViewController: ProductDetailViewController?
     var productDetailStoryboardID = "productDetailStoryboardID"
     
+    
+    lazy var indicator = NVActivityIndicatorView(frame: .init(x: view.center.x - 25, y: self.view.center.y - 25, width: 50, height: 50), color: .black)
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(indicator)
         containerView.layer.cornerRadius = 25
         containerView.backgroundColor = UIColor.white
         setupCollectionView()
@@ -37,8 +45,11 @@ class ViewController: UIViewController {
     
     func fetchPhotos() {
         print("Fetching...")
+        indicator.startAnimating()
         productProvider.fetch(category: categoryName, sirala: siralaName) {product in
             self.updatePhotosAfterFetching(product)
+            self.indicator.stopAnimating()
+
             }
         }
       
